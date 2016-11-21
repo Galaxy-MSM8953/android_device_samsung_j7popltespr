@@ -1,0 +1,2 @@
+set_prop(shell, operator_prop)
+set_prop(system_app, operator_prop)
