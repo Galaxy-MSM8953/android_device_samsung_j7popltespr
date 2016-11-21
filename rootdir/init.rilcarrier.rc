@@ -21,3 +21,10 @@ service ril-daemon /system/bin/rild
     user root
     group radio cache inet misc audio log qcom_diag system drmrpc vpn readproc
     onrestart restart cpboot-daemon
+
+# init definitions for the custom carrier config app
+on property:persist.operator.numeric=*
+    setprop ro.cdma.home.operator.numeric ${persist.operator.numeric}
+
+on property:persist.operator.alpha=*
+    setprop ro.cdma.home.operator.alpha ${persist.operator.alpha}

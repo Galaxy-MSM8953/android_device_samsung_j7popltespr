@@ -11,4 +11,5 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    CdmaCarrierConfig \
     init.rilcarrier.rc
