@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     camera.device@1.0-impl \
+    libcamera_parameters_shim \
     libjpega
 
 # Display/Graphics
