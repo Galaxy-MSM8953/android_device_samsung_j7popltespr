@@ -1,0 +1,46 @@
+# QMI
+vendor/lib64/libdiag.so
+vendor/lib64/libdsutils.so
+vendor/lib64/libidl.so
+vendor/lib64/libqcci_legacy.so
+vendor/lib64/libqcmaputils.so
+vendor/lib64/libqmi.so
+vendor/lib64/libqmi_cci.so
+vendor/lib64/libqmi_client_helper.so
+vendor/lib64/libqmi_client_qmux.so
+vendor/lib64/libqmi_common_so.so
+vendor/lib64/libqmi_csi.so
+vendor/lib64/libqmi_encdec.so
+vendor/lib64/libqmiservices.so
+vendor/lib/libdiag.so
+vendor/lib/libdsutils.so
+vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
+vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so
+
+# RIL
+bin/rild
+lib/libril.so
+lib64/libril.so
+lib/librilutils.so
+lib64/librilutils.so
+lib/libsec-ril.so
+lib64/libsec-ril.so
+
+# Sensors
+bin/sensors.qcom
+lib64/hw/sensors.msm8953.so
+lib/hw/sensors.msm8953.so
+lib/sensors.ssc.so
+lib64/sensors.ssc.so
+vendor/etc/yas_set.cfg
+vendor/lib64/libsensor1.so
+vendor/lib64/libyasalgo.so
+vendor/lib/libsensor1.so
