@@ -38,8 +38,8 @@ lib64/libsec-ril.so
 bin/sensors.qcom
 lib64/hw/sensors.msm8953.so
 lib/hw/sensors.msm8953.so
-lib/sensors.ssc.so
-lib64/sensors.ssc.so
+vendor/lib/sensors.ssc.so
+vendor/lib64/sensors.ssc.so
 vendor/etc/yas_set.cfg
 vendor/lib64/libsensor1.so
 vendor/lib64/libyasalgo.so
