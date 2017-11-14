@@ -45,12 +45,14 @@ bin/tftp_server
 etc/data/dsi_config.xml|6de60854968e768c60665f50b41dae68
 etc/data/netmgr_config.xml|76328dbcda04dd0bafdd6997c42824cd
 etc/data/qmi_config.xml|1f638a153d55a65c441230d449689f3a
+lib/libfloatingfeature.so
 lib/libprotobuf-cpp-full.so
 lib/libprotobuf-cpp-lite.so
 lib/librmnetctl.so
 lib/libsec-ril.so
 lib/libreference-ril.so
 lib/libsecnativefeature.so
+lib64/libfloatingfeature.so
 lib64/libprotobuf-cpp-full.so
 lib64/libprotobuf-cpp-lite.so
 lib64/libsec-ril.so
