@@ -50,9 +50,6 @@ bin/qmuxd
 bin/radish
 bin/rmt_storage
 bin/tftp_server
-etc/data/dsi_config.xml|6de60854968e768c60665f50b41dae68
-etc/data/netmgr_config.xml|76328dbcda04dd0bafdd6997c42824cd
-etc/data/qmi_config.xml|1f638a153d55a65c441230d449689f3a
 etc/plmn_delta.bin
 etc/plmn_se13.bin
 etc/srm.bin
