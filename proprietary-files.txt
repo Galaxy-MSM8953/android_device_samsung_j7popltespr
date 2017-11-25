@@ -43,6 +43,7 @@ vendor/lib64/libsmemlog.so
 # Radio
 bin/diag_mdlog
 bin/diag_uart_log
+bin/ipacm-diag
 bin/netmgrd
 bin/port-bridge
 bin/qmuxd
@@ -59,20 +60,14 @@ lib/libatparser.so
 lib/libfactoryutil.so
 lib/libfloatingfeature.so
 lib/libomission_avoidance.so
-lib/libprotobuf-cpp-full.so
-lib/libprotobuf-cpp-lite.so
 lib/libreference-ril.so
-lib/librmnetctl.so
 lib/libsec-ril.so
 lib/libsecnativefeature.so
 lib64/libatparser.so
 lib64/libfactoryutil.so
 lib64/libfloatingfeature.so
 lib64/libomission_avoidance.so
-lib64/libprotobuf-cpp-full.so
-lib64/libprotobuf-cpp-lite.so
 lib64/libreference-ril.so
-lib64/librmnetctl.so
 lib64/libsec-ril.so
 lib64/libsecnativefeature.so
 lib64/libsecril-client.so
