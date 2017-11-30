@@ -57,17 +57,12 @@ lib/libatparser.so
 lib/libfactoryutil.so
 lib/libfloatingfeature.so
 lib/libomission_avoidance.so
-lib/libreference-ril.so
 lib/libsec-ril.so
-lib/libsecnativefeature.so
 lib64/libatparser.so
 lib64/libfactoryutil.so
 lib64/libfloatingfeature.so
 lib64/libomission_avoidance.so
-lib64/libreference-ril.so
 lib64/libsec-ril.so
-lib64/libsecnativefeature.so
-lib64/libsecril-client.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
