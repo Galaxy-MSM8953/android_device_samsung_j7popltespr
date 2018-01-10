@@ -13,7 +13,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/data/qmi_config.xml:system/etc/data/qmi_config.xml
 
 # System properties
--include $(LOCAL_PATH)/system_prop.mk
+TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
