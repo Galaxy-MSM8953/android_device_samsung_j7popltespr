@@ -38,6 +38,7 @@ persist.rild.nitz_short_ons_0=
 persist.rild.nitz_short_ons_1=
 persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
+persist.eons.enabled=true
 DEVICE_PROVISIONED=1
 rild.libpath=/system/lib64/libsec-ril.so
 rild.libargs=-d /dev/smd0
