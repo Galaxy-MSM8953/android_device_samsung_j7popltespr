@@ -43,8 +43,7 @@ bin/diag_mdlog
 bin/diag_uart_log
 bin/ipacm-diag
 bin/netmgrd
-bin/ftm_ptt
-bin/port-bridge
+bin/smdexe
 bin/qmuxd
 bin/radish
 bin/rmt_storage
