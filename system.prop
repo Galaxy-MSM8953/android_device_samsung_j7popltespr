@@ -6,8 +6,11 @@ ro.config.low_ram=false
 ro.config.zram=false
 
 # RIL
-ro.cdma.home.operator.alpha=Chameleon
+ro.com.google.clientidbase.ms=android-sprint-mvno-us
+ro.com.google.clientidbase.am=android-sprint-mvno-us
+ro.com.google.clientidbase.yt=android-sprint-mvno-us
 ro.cdma.home.operator.numeric=310000
+gsm.operator.numeric=310000
 ro.telephony.default_network=10
 ril.subscription.types=NV,RUIM
 ro.radio.noril=no 
