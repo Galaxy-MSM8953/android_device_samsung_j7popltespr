@@ -3,7 +3,7 @@ vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
 # QMI
-bin/irsc_util
+bin/irsc_util:vendor/bin/irsc_util
 etc/permissions/qti_permissions.xml
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
@@ -39,15 +39,15 @@ vendor/lib64/libqmiservices.so
 vendor/lib64/libsmemlog.so
 
 # Radio
-bin/diag_mdlog
-bin/diag_uart_log
-bin/ipacm-diag
-bin/netmgrd
-bin/smdexe
-bin/qmuxd
-bin/radish
-bin/rmt_storage
-bin/tftp_server
+bin/diag_mdlog:vendor/bin/diag_mdlog
+bin/diag_uart_log:vendor/bin/diag_uart_log
+bin/ipacm-diag:vendor/bin/ipacm-diag
+bin/netmgrd:vendor/bin/netmgrd
+bin/smdexe:vendor/bin/smdexe
+bin/qmuxd:vendor/bin/qmuxd
+bin/radish:vendor/bin/radish
+bin/rmt_storage:vendor/bin/rmt_storage
+bin/tftp_server:vendor/bin/tftp_server
 etc/plmn_delta.bin
 etc/plmn_se13.bin
 etc/srm.bin
