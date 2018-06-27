@@ -12,3 +12,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_CHARACTERISTICS := phone
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT=samsung/j7popltespr/j7popltespr:7.0/NRD90M/J727PVPU3ARC2:user/release-keys \
+    PRIVATE_BUILD_DESC="j7popltespr-user 7.0 NRD90M J727PVPU3ARC2 release-keys" \
