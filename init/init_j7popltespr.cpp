@@ -48,10 +48,19 @@ void vendor_load_properties()
 
     if (carrier == "BST") {
         property_set("ro.cdma.home.operator.alpha", "Boost Mobile");
+        property_set("ro.com.google.clientidbase.ms", "android-boost-us");
+        property_set("ro.com.google.clientidbase.am", "android-boost-us");
+        property_set("ro.com.google.clientidbase.yt", "android-boost-us");
     } else if (carrier == "VMU") {
         property_set("ro.cdma.home.operator.alpha", "Virgin Mobile");
+        property_set("ro.com.google.clientidbase.ms", "android-virgin-us");
+        property_set("ro.com.google.clientidbase.am", "android-virgin-us");
+        property_set("ro.com.google.clientidbase.yt", "android-virgin-us");
     } else if (carrier == "SPR") {
         property_set("ro.cdma.home.operator.alpha", "Sprint");
+        property_set("ro.com.google.clientidbase.ms", "android-sprint-us");
+        property_set("ro.com.google.clientidbase.am", "android-sprint-us");
+        property_set("ro.com.google.clientidbase.yt", "android-sprint-us");
     } else if (carrier == "XAS") {
         property_set("ro.cdma.home.operator.alpha", "Chameleon");
     } else {
