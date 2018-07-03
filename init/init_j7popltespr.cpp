@@ -37,8 +37,9 @@
 #include "log.h"
 #include "util.h"
 
+#include "init_msm8953.h"
 
-void vendor_load_properties()
+void init_target_properties()
 {
     std::string platform = property_get("ro.board.platform");
     if (platform != ANDROID_TARGET)
