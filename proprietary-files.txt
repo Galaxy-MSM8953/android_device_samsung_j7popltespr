@@ -38,6 +38,10 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libsmemlog.so
 
+# Device Radios
+lib64/libsec-ril.spr.so:vendor/lib64/libsec-ril.spr.so|e04e31ebe492a302a2fb4d1bd18fe4340a37c169
+lib64/libsec-ril.usc.so:vendor/lib64/libsec-ril.usc.so|6aed17656a2920754f52ccceeac6f2e0ff65ea29
+
 # Radio
 bin/diag_mdlog
 bin/diag_uart_log
@@ -60,7 +64,6 @@ lib64/libatparser.so
 lib64/libfactoryutil.so
 lib64/libfloatingfeature.so
 lib64/libomission_avoidance.so
-lib64/libsec-ril.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
