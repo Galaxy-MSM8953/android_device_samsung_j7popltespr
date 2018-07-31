@@ -170,6 +170,7 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 TARGET_PROVIDES_KEYMASTER := true
 
 # Manifest
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 
