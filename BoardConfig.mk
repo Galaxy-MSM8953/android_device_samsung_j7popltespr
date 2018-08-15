@@ -221,7 +221,7 @@ include device/qcom/sepolicy/sepolicy.mk
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-     /system/lib/hw/camera.msm8953.so|libcamera_parameters_shim.so 
+     /system/lib/hw/camera.msm8953.so|libshims_camera.so 
 
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true
