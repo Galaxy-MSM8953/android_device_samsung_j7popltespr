@@ -335,6 +335,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
+# System Properties
+-include $(LOCAL_PATH)/system_prop.mk
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
