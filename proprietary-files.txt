@@ -643,8 +643,6 @@ vendor/lib64/libsubsystem_control.so
 vendor/lib64/libsystem_health_mon.so
 
 # Sensors
-lib64/libsensor.so
-lib/libsensor.so
 vendor/lib64/hw/sensors.msm8953.so		
 vendor/lib/hw/sensors.msm8953.so
 
