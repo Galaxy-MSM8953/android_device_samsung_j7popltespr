@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
+DEVICE_PATH := device/samsung/j7popltespr
 
 BOARD_VENDOR := samsung
 
@@ -95,7 +95,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/j7popltespr/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 BOARD_HAS_QCA_BT_ROME := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
@@ -147,7 +147,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # FM
 AUDIO_FEATURE_ENABLED_FM := true
@@ -171,14 +171,14 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 TARGET_PROVIDES_KEYMASTER := true
 
 # Mainfest
-DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/configs/manifest.xml
-DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/configs/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 
 # Malloc
 MALLOC_SVELTE := true
 
 # Media
-BOARD_SECCOMP_POLICY := $(LOCAL_PATH)/seccomp
+BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Partitions
@@ -207,7 +207,7 @@ BOARD_MODEM_TYPE := mdm9x35
 PROTOBUF_SUPPORTED := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_DOWNLOAD_MODE := true
@@ -217,7 +217,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 include device/qcom/sepolicy/sepolicy.mk
 
 #BOARD_SEPOLICY_DIRS += \
-#    $(LOCAL_PATH)/sepolicy
+#    $(DEVICE_PATH)/sepolicy
 
 # Snapdragon LLVM
 TARGET_USE_SDCLANG := true
