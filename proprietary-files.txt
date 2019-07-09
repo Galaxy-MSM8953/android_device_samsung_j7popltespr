@@ -23,14 +23,14 @@ vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 
 # ADSP modules
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libexternal_dog_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so
-
+vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
+vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
 # ANT+
 lib/com.qualcomm.qti.ant@1.0.so
@@ -75,7 +75,6 @@ lib64/soundfx/libaudioeffectoffload.so
 
 # Bluetooth
 lib64/libaptX_encoder.so
-lib64/libaptXHD_encoder.so
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
@@ -88,7 +87,6 @@ lib/hw/camera.msm8953.so
 lib/libSisoCameraDistortionEffects.so
 lib/libarcsoft_wideselfie.so
 lib/libatomjpeg.so
-lib/libcameraservice_cameramodule.so
 lib/libdmcFaceEngine.so
 lib/libedmnativehelper.so
 lib/libmm-qcamera.so
@@ -101,48 +99,49 @@ lib/libsccore.so
 lib/libseccameracore.so
 lib/libsupershot.so
 vendor/lib/libQjpeg.so
+vendor/lib/libSEF.so
 vendor/lib/libalawb_algo.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera_pdaf.so
-vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
+vendor/lib/libsecimaging.so
+vendor/lib/libsecjpeginterface.so
 vendor/lib/libsecjpegquram.so
+vendor/lib/libseemore.so
+vendor/lib/libts_detected_face_hal.so
+vendor/lib/libts_face_beautify_hal.so
 
-vendor/lib/libSEF.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_dcrf.so
 vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_mct.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_debug.so
 vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera2_wnr_module.so
 vendor/lib/libmmcamera_cac3_lib.so
 vendor/lib/libmmcamera_chromaflash_lib.so
-vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dcrf_lib.so
 vendor/lib/libmmcamera_dummyalgo.so
-vendor/lib/libmmcamera_dw9761b_eeprom.so
 vendor/lib/libmmcamera_dw9807_eeprom.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
@@ -152,13 +151,7 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
-vendor/lib/libmmcamera_imx214.so
 vendor/lib/libmmcamera_imx219.so
-vendor/lib/libmmcamera_imx230.so
-vendor/lib/libmmcamera_imx241.so
-vendor/lib/libmmcamera_imx258.so
-vendor/lib/libmmcamera_imx258_gt24c16_eeprom.so
-vendor/lib/libmmcamera_imx298.so
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
 vendor/lib/libmmcamera_isp_be_stats44.so
@@ -193,53 +186,24 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
-vendor/lib/libmmcamera_le2464c_master_eeprom.so
 vendor/lib/libmmcamera_llvd.so
-vendor/lib/libmmcamera_m24c64s_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so
-vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so
+vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so
 vendor/lib/libmmcamera_optizoom_lib.so
-vendor/lib/libmmcamera_ov13850.so
-vendor/lib/libmmcamera_ov13850_q13v06k.so
-vendor/lib/libmmcamera_ov2685.so
-vendor/lib/libmmcamera_ov2685_scv3b4035.so
-vendor/lib/libmmcamera_ov4688.so
-vendor/lib/libmmcamera_ov4688_eeprom.so
-vendor/lib/libmmcamera_ov5645.so
-vendor/lib/libmmcamera_ov5670.so
-vendor/lib/libmmcamera_ov8858.so
-vendor/lib/libmmcamera_ov8865.so
 vendor/lib/libmmcamera_paaf_lib.so
+vendor/lib/libmmcamera_pdaf.so
+vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
-vendor/lib/libmmcamera_s5k3l2xx.so
-vendor/lib/libmmcamera_s5k3m2xm.so
-vendor/lib/libmmcamera_s5k3m2xx.so
-vendor/lib/libmmcamera_s5k3p3sx.so
-vendor/lib/libmmcamera_s5k4h5yc.so
 vendor/lib/libmmcamera_s5k5e3yx.so
-vendor/lib/libmmcamera_s5k6b2yx.so
-vendor/lib/libmmcamera_sony_imx214_eeprom.so
-vendor/lib/libmmcamera_sony_imx298_eeprom.so
-vendor/lib/libmmcamera_sonyimx135_eeprom.so
-vendor/lib/libmmcamera_sr259.so
 vendor/lib/libmmcamera_stillmore_lib.so
-vendor/lib/libmmcamera_sunny_8865_eeprom.so
-vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so
-vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so
+vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_trueportrait_lib.so
-vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib/libmmcamera_vpu_module.so
-vendor/lib/libsecimaging.so
-vendor/lib/libsecjpeginterface.so
-vendor/lib/libseemore.so
-vendor/lib/libts_detected_face_hal.so
-vendor/lib/libts_face_beautify_hal.so
+vendor/lib/libmmcamera_zc535_eeprom.so
 
 # Camera Configs
 vendor/etc/camera/D05QL_s5k5e3yx_module_info.xml
@@ -473,14 +437,12 @@ vendor/lib/libllvm-qcom.so
 vendor/lib/libllvm-qgl.so
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-qdcm.so
-vendor/lib/libmmQSM.so
 vendor/lib/libOpenCL.so
 vendor/lib/libRSDriver_adreno.so
 vendor/lib/librs_adreno.so
 vendor/lib/librs_adreno_sha1.so
-vendor/lib/libscale.so
--vendor/lib/libsdm-disp-apis.so
-vendor/lib/libsd_sdk_display.so
+-lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
+lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
@@ -503,38 +465,36 @@ vendor/lib64/libllvm-qgl.so
 vendor/lib64/libmm-disp-apis.so
 vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmm-qdcm.so
-vendor/lib64/libmmQSM.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/libscalar.so
-vendor/lib64/libscale.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
--vendor/lib64/libsdm-disp-apis.so
+-lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
 vendor/lib64/libsdmextension.so
-vendor/lib64/libsd_sdk_display.so
+lib64/libsd_sdk_display.so:vendor/lib64/libsd_sdk_display.so
 vendor/lib64/libtinyxml2_1.so
 
 # Graphics firmware
-vendor/etc/firmware/a225p5_pm4.fw
-vendor/etc/firmware/a225_pfp.fw
-vendor/etc/firmware/a225_pm4.fw
-vendor/etc/firmware/a300_pfp.fw
-vendor/etc/firmware/a300_pm4.fw
-vendor/etc/firmware/a330_pfp.fw
-vendor/etc/firmware/a330_pm4.fw
-vendor/etc/firmware/a420_pfp.fw
-vendor/etc/firmware/a420_pm4.fw
-vendor/etc/firmware/a530_gpmu.fw2
-vendor/etc/firmware/a530_pfp.fw
-vendor/etc/firmware/a530_pm4.fw
-vendor/etc/firmware/a530v1_pfp.fw
-vendor/etc/firmware/a530v1_pm4.fw
-vendor/etc/firmware/a530v2_seq.fw2
-vendor/etc/firmware/a530v3_gpmu.fw2
-vendor/etc/firmware/a530v3_seq.fw2
+vendor/firmware/a225p5_pm4.fw
+vendor/firmware/a225_pfp.fw
+vendor/firmware/a225_pm4.fw
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
+vendor/firmware/a420_pfp.fw
+vendor/firmware/a420_pm4.fw
+vendor/firmware/a530_gpmu.fw2
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a530v1_pfp.fw
+vendor/firmware/a530v1_pm4.fw
+vendor/firmware/a530v2_seq.fw2
+vendor/firmware/a530v3_gpmu.fw2
+vendor/firmware/a530v3_seq.fw2
 
 # IMS
 -app/ImsSettings/ImsSettings.apk
@@ -573,18 +533,14 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal.so
-vendor/lib/libmmsw_detail_enhancement.so
-vendor/lib/libmmsw_math.so
-vendor/lib/libmmsw_opencl.so
-vendor/lib/libmmsw_platform.so
+lib/libmmosal.so
 vendor/lib/libvqzip.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libmm-color-convertor.so
-vendor/lib64/libmmosal.so
+lib64/libmmosal.so
 vendor/media/LMspeed_508.emd
 vendor/media/PFFprec_600.emd
 
@@ -592,8 +548,9 @@ vendor/media/PFFprec_600.emd
 vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
-
 # Perf
+lib/vendor.qti.hardware.perf@1.0.so
+lib64/vendor.qti.hardware.perf@1.0.so
 vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
@@ -602,12 +559,10 @@ vendor/lib/libperfgluelayer.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
-vendor/lib/vendor.qti.hardware.perf@1.0.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
-vendor/lib64/vendor.qti.hardware.perf@1.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -660,7 +615,7 @@ vendor/lib64/libsmemlog.so
 vendor/bin/netmgrd
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
-vendor/etc/plmn_delta.bin
+vendor/etc/plmn_delta_usacdma.bin
 vendor/etc/plmn_se13.bin
 bin/srm.bin
 lib/libatparser.so
@@ -676,16 +631,13 @@ vendor/lib64/libsec-ril.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
-vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
-vendor/lib64/libcneapiclient.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
-vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/libSubSystemShutdown.so
 vendor/lib64/libsubsystem_control.so
 vendor/lib64/libsystem_health_mon.so
