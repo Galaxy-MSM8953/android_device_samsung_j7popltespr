@@ -574,7 +574,7 @@ vendor/lib/libperipheral_client.so
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/mm-pp-dpps
 vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.postproc@1.0.so
+vendor/lib64/vendor.display.postproc@1.0_vendor.so:vendor/lib64/vendor.display.postproc@1.0.so
 
 # QMI
 vendor/bin/irsc_util
