@@ -28,9 +28,6 @@
         <item>@string/mdnie_scenario_browser</item>
         <item>@string/mdnie_scenario_ebook</item>
         <item>@string/mdnie_scenario_email</item>
-        <item>@string/mdnie_scenario_game_low</item>
-        <item>@string/mdnie_scenario_game_mid</item>
-        <item>@string/mdnie_scenario_game_high</item>
         <item>@string/mdnie_scenario_tdmb</item>
     </string-array>
 
@@ -47,8 +44,5 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
     </string-array>
 </resources>
