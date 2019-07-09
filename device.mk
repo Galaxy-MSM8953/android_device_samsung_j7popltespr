@@ -327,6 +327,10 @@ PRODUCT_PACKAGES += \
     libxml2 \
     libprotobuf-cpp-full
 
+# SEC
+PRODUCT_PACKAGES += \
+    libsecnativefeature
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
