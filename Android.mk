@@ -225,6 +225,16 @@ $(MLD_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(MLD_SYMLINKS)
 
+# MSADP
+MSADP_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/msadp
+$(MSADP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "MSADP link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /dev/block/bootdevice/by-name/msadp $(dir $@)
+
+ALL_DEFAULT_INSTALLED_MODULES += $(MSADP_SYMLINKS)
+
 # Prov
 PROV_IMAGES := \
 	prov.b00 prov.b01 prov.b02 prov.b03 prov.b04 prov.b05 prov.b06 prov.mtd \
