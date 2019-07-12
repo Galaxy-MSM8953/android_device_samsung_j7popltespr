@@ -27,16 +27,16 @@ vendor/lib/rfsa/adsp/libadsp_fd_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libexternal_dog_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
 # ANT+
-lib/com.qualcomm.qti.ant@1.0.so
 -lib/libantradio.so
-lib64/com.qualcomm.qti.ant@1.0.so
 -lib64/libantradio.so
+lib/com.qualcomm.qti.ant@1.0.so
+lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
@@ -49,13 +49,6 @@ vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
 vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
 
 # Audio libraries
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbmapper.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudioalsa.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbmapper.so
@@ -68,6 +61,13 @@ vendor/lib/libaudioalsa.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
+vendor/lib64/libacdb-fts.so
+vendor/lib64/libacdbloader.so
+vendor/lib64/libacdbmapper.so
+vendor/lib64/libacdbrtac.so
+vendor/lib64/libadiertac.so
+vendor/lib64/libaudcal.so
+vendor/lib64/libaudioalsa.so
 
 # Audio SoundFX
 lib/soundfx/libaudioeffectoffload.so
@@ -359,9 +359,9 @@ vendor/lib/libchromatix_s5k5e3yx_vt.so
 vendor/lib/libchromatix_s5k5e3yx_zsl_preview_lc898122.so
 
 # Camera Actuator
-vendor/lib/libactuator_zc535.so
 vendor/lib/libactuator_dw9807.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
+vendor/lib/libactuator_zc535.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
@@ -379,19 +379,19 @@ vendor/bin/hvdcp_opti
 
 # DRM
 vendor/bin/qseecomd
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
+vendor/lib/libQSEEComAPI.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libdrmfs.so
+vendor/lib64/libdrmtime.so
+vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libSecureUILib.so
 vendor/lib64/libssd.so
-vendor/lib64/libStDrvInt.so
-vendor/lib/libQSEEComAPI.so
 
 # DRM (Widevine)
 vendor/bin/hw/android.hardware.drm@1.0-service.widevine
@@ -574,7 +574,6 @@ lib/vendor.qti.hardware.vpp@1.1.so
 lib64/vendor.qti.hardware.vpp@1.1.so
 -vendor/lib/libgpustats.so
 vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libOmxAlacDecSw.so
@@ -587,12 +586,12 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
+vendor/lib/libmm-color-convertor.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libvqzip.so
 vendor/lib/vendor.qti.hardware.vpp@1.1_vendor.so
 -vendor/lib64/libgpustats.so
 vendor/lib64/libI420colorconvert.so
-vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libOmxAlacDecSw.so
@@ -604,6 +603,7 @@ vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
+vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1_vendor.so
 vendor/media/LMspeed_508.emd
@@ -635,8 +635,8 @@ vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so
 vendor/lib/libfeedbackhandler.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libqti-iopd-client.so
-vendor/lib/libqti-perfd.so
 vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/vendor.qti.hardware.iop@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.iop@2.0_vendor.so
@@ -645,8 +645,8 @@ vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so
 vendor/lib64/libfeedbackhandler.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.iop@2.0_vendor.so
@@ -761,11 +761,6 @@ vendor/lib/hw/sensors.msm8953.so
 vendor/lib64/libyasalgo.so
 vendor/lib64/hw/sensors.msm8953.so
 
-# SSR
-vendor/bin/ssr_diag
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
-
 # Thermal
 vendor/bin/thermal-engine
 vendor/lib64/libthermalclient.so
@@ -773,8 +768,8 @@ vendor/lib64/libthermalioctl.so
 vendor/lib/libthermalclient.so
 
 # Time service
-vendor/bin/time_daemon
 -vendor/app/TimeService/TimeService.apk
+vendor/bin/time_daemon
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
 
