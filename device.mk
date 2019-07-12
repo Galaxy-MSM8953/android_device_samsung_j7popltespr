@@ -227,10 +227,6 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung \
     vendor.lineage.trust@1.0-service
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
