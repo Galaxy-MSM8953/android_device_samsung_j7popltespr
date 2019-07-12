@@ -63,13 +63,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=rome
 
 # Dalvik
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=256m \
-    dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=2m \
-    dalvik.vm.heapmaxfree=8m
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -100,11 +94,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.cne.feature=0 \
+    persist.data.dpm.enable=true \
+    persist.data.dropssdp=false \
+    persist.data.ibfc.enable=true \
+    persist.data.mode=concurrent \
+    persist.data.netmgrd.qos.enable=false \
+    persist.radio.atfwd.start=true \
     persist.radio.multisim.config=ss \
+    persist.radio.sib16_support=1 \
     persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.sib16_support=1
+    persist.vendor.radio.sib16_support=1 \
+    rild.libargs=-d /dev/umts_ipc0 \
+    rild.libpath=/vendor/lib64/libsec-ril.so \
+    ro.multisim.simslotcount=1 \
+    ro.radio.noril=no \
+    ro.telephony.default_cdma_sub=0 \
+    ro.use_data_netmgrd=true
 
 # Samsung Specific
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -113,5 +121,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Samsung-Specific (RIL)
 PRODUCT_PROPERTY_OVERRIDES += \
-    rild.libargs=-d /dev/umts_ipc0 \
     vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
