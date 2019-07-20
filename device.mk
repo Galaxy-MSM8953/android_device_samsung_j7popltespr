@@ -355,10 +355,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
-# Verity
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
-
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
