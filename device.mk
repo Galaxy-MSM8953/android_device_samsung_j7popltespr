@@ -322,11 +322,13 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libril \
+    android.hardware.radio@1.1 \
+    android.hardware.radio.deprecated@1.0 \
     librmnetctl \
     libsecril-client \
     libxml2 \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    rild
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
