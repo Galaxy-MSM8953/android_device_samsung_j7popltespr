@@ -220,7 +220,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.msm8953 \
     android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service
+    android.hardware.light@2.0-service.samsung
 
 # Lineage hardware
 PRODUCT_PACKAGES += \
