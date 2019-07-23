@@ -334,6 +334,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     $(LOCAL_PATH)/configs/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml
 
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v27/arm64/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.radio@1.0.so:system/lib/android.hardware.rav27@1.0.so \
+    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/android.hardware.radio@1.0.so:system/lib64/android.hardware.rav27@1.0.so
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl
