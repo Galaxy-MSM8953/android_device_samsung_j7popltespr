@@ -19,25 +19,13 @@ service atfwd /vendor/bin/ATFWD-daemon
     user system
     group system radio
 
-service start_netmgrd /vendor/bin/sh /system/etc/control_netmgrd.sh start
-    class main
-    user root
-    group radio
-    disabled
-    oneshot
-
-service stop_netmgrd /vendor/bin/sh /system/etc/control_netmgrd.sh stop
-    class main
-    user root
-    group radio
-    disabled
-    oneshot
-
 on property:ril.restart.netmgrd=true
-    start stop_netmgrd
+    stop netmgrd
+    setprop sys.control.netmgr stopped
 
 on property:init.svc.netmgrd=stopped
-    start start_netmgrd
+    start netmgrd
+    setprop sys.control.netmgr started
 
 on property:sys.control.netmgr=started
     setprop ril.restart.netmgrd false
