@@ -6,7 +6,8 @@
 
 # service can not be overwritten except SPRINT
 # Thus, rilcarrier is imported before common rc, like init.rilchip.rc
-import /init.rilmptcp.rc
+import /vendor/etc/init/hw/init.rilcarrier.rc
+import /vendor/etc/init/hw/init.rilchip.rc
 
 # AT Distributor for factory test
 service at_distributor /system/bin/at_distributor
