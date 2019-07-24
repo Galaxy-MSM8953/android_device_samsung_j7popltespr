@@ -361,6 +361,7 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     libwpa_client \
     hostapd \
+    macloader \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf \
