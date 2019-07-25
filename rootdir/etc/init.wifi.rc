@@ -105,7 +105,7 @@ service wlandutservice /system/bin/wlandutservice
     disabled
     oneshot
 
-service macloader /system/vendor/bin/hw/macloader
+service macloader /system/vendor/bin/macloader
     class main
     oneshot
 
