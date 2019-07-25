@@ -107,7 +107,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
-    rild.libargs=-d /dev/umts_ipc0 \
     rild.libpath=/vendor/lib64/libsec-ril.so \
     ro.multisim.simslotcount=1 \
     ro.radio.noril=no \
