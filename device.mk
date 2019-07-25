@@ -362,6 +362,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     hostapd \
     macloader \
+    wcnss_service \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf \
