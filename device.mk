@@ -359,7 +359,7 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml \
     libqsap_sdk \
-    libwpa_client \
+    libwifi-hal-qcom \
     hostapd \
     macloader \
     wificond \
