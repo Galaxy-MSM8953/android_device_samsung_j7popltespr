@@ -166,6 +166,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrmclearkeyplugin
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
