@@ -773,12 +773,6 @@ vendor/lib/mediadrm/libwvdrmengine.so
 
 # WiFi
 bin/cnss-daemon:vendor/bin/cnss-daemon
-vendor/lib/libwifiucmkeystorehal.so
-vendor/lib/vendor.samsung.frameworks.ucm.wifi@1.0.so
-vendor/lib64/libwifiucmkeystorehal.so
-vendor/lib64/vendor.samsung.frameworks.ucm.wifi@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.sec_hostapd@1.0.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant@1.0.so
 
 # WiFi Firmware
 etc/firmware/nvm_tlv.bin
