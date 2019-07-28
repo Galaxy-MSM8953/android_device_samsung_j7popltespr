@@ -82,7 +82,7 @@ vendor/lib64/libbtnv.so
 lib64/libaptX_encoder.so
 
 # Bluetooth (FM)
-vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
+
 
 # Camera
 vendor/bin/mm-qcamera-daemon
@@ -397,6 +397,21 @@ vendor/lib/libwvhidl.so
 etc/firmware/ice40.bin
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
+
+# FM
+etc/init/init.qti.fm.rc:vendor/etc/init/init.qti.fm.rc
+lib/fm_helium.so
+lib/libfm-hci.so
+-lib/vendor.qti.hardware.fm@1.0.so
+lib64/fm_helium.so
+lib64/libfm-hci.so
+-lib64/vendor.qti.hardware.fm@1.0.so
+vendor/bin/init.qti.fm.sh
+vendor/bin/fm_qsoc_patches
+vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8953.so
