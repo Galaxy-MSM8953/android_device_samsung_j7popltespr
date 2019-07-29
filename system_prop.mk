@@ -56,11 +56,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1 \
-    qcom.bluetooth.soc=rome \
+    qcom.bluetooth.soc=smd \
     ro.bluetooth.hfp.ver=1.7 \
-    ro.bt.bdaddr_path=/efs/bluetooth/bt_addr \
     ro.qualcomm.bt.hci_transport=smd \
-    vendor.qcom.bluetooth.soc=rome
+    vendor.qcom.bluetooth.soc=smd
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
