@@ -59,6 +59,14 @@ if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
+function blob_fixup() {
+        case "${1}" in
+        vendor/lib/vendor.samsung.hardware.radio@1.1_vendor.so | vendor/lib64/vendor.samsung.hardware.radio@1.1_vendor.so)
+                sed -i -e 's/android.hardware.radio@1.0.so/android.hardware.rav27@1.0.so/g' "${2}"
+        ;;
+        esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
