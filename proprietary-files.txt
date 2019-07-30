@@ -83,19 +83,48 @@ vendor/lib64/libbtnv.so
 # Bluetooth (aptX)
 lib64/libaptX_encoder.so
 
+# Camera
+vendor/bin/mm-qcamera-daemon
+lib/hw/camera.msm8953.so:vendor/lib/hw/camera.msm8953.so
+lib/libmmcamera_interface.so:vendor/lib/libmmjpeg_interface.so
+lib/libmmjpeg_interface.so:vendor/lib/libmmjpeg_interface.so
+lib/libqomx_core.so:vendor/lib/libqomx_core.so
+vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_iface_modules.so
+vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_is.so
+vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_pp_buf_mgr.so
+vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_stats_algorithm.so
+vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_vpe_module.so
+vendor/lib/libmmcamera2_wnr_module.so
+vendor/lib/libmmcamera_dbg.so
+vendor/lib/libmmcamera_eztune_module.so
+vendor/lib/libmmcamera_imglib.so
+vendor/lib/libmmcamera_pdaf.so
+vendor/lib/libmmcamera_pdafcamif.so
+vendor/lib/libmmcamera_ppbase_module.so
+vendor/lib/libmmcamera_thread_services.so
+vendor/lib/libmmcamera_vpu_module.so
+vendor/lib/libts_detected_face_hal.so
+vendor/lib/libts_face_beautify_hal.so
+
+# Camera (j7popltespr specific)
+vendor/lib/libmmcamera_dw9807_eeprom.so
+vendor/lib/libflash_pmic.so
+
 # Camera Configs
 vendor/etc/camera/D05QL_s5k5e3yx_module_info.xml
 vendor/etc/camera/imx219_chromatix.xml
-vendor/etc/camera/imx219_elite_chromatix.xml
-vendor/etc/camera/imx241_chromatix.xml
 vendor/etc/camera/msm8953_camera_j7pop.xml
 vendor/etc/camera/R08QS_imx219_module_info.xml
-vendor/etc/camera/s5k4h5yc_dw9807_chromatix_gta2s.xml
 vendor/etc/camera/s5k4h5yc_dw9807_chromatix.xml
-vendor/etc/camera/s5k5e3yx_f2_2_chromatix_j3y17.xml
 vendor/etc/camera/s5k5e3yx_f2_2_chromatix.xml
-vendor/etc/camera/sr259_chromatix.xml
-vendor/etc/camera/Y13QL_s5k3l2xx_chromatix.xml
 
 # Camera chromatix
 vendor/lib/libchromatix_imx219_3a_4k_preview.so
@@ -127,29 +156,6 @@ vendor/lib/libchromatix_imx219_isp_mode_panorama.so
 vendor/lib/libchromatix_imx219_isp_mode_sports.so
 vendor/lib/libchromatix_imx219_isp_snapshot.so
 vendor/lib/libchromatix_imx219_postproc.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_3a_hfr_120.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_3a_night_preview.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_3a_panorama_preview.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_3a_sports_preview.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_3a_vt_24fps.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_3a_vt_30fps.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_3a_zsl_preview.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_3a_zsl_video.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_common.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_hfr_120.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_iso_snapshot.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_liveshot.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_night_snapshot.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_panorama_snapshot.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_preview.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_snapshot.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_sports_snapshot.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_cpp_video.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_isp_default_video.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_isp_hfr_120.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_isp_preview.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_isp_snapshot.so
-vendor/lib/libchromatix_s5k4h5yc_dw9807_postproc.so
 vendor/lib/libchromatix_s5k5e3yx_common.so
 vendor/lib/libchromatix_s5k5e3yx_cpp_hfr_120.so
 vendor/lib/libchromatix_s5k5e3yx_cpp_liveshot.so
@@ -203,8 +209,6 @@ vendor/lib/libchromatix_s5k5e3yx_zsl_preview_lc898122.so
 
 # Camera Actuator
 vendor/lib/libactuator_dw9807.so
-vendor/lib/libactuator_rohm_bu64243gwz.so
-vendor/lib/libactuator_zc535.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
