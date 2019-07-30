@@ -177,17 +177,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# GPS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl-qti \
-    android.hardware.gnss@1.0-service-qti \
-
-PRODUCT_PACKAGES += \
-    gps.conf \
-    libcurl \
-    libgnss \
-    libgnsspps
-
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@1.0-impl \
