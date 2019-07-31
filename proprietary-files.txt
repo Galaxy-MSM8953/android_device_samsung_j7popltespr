@@ -191,6 +191,20 @@ vendor/lib/libmmcamera_dw9807_eeprom.so
 vendor/lib/libmmcamera_imx219.so
 vendor/lib/libmmcamera_s5k5e3yx.so
 
+# Camera (A6+)
+vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service|666eb413cc9fd655529ba99253b2501c8b4f8dfe
+vendor/etc/init/vendor.samsung.hardware.camera.provider@2.4-service.rc|31edc5fcfbaa9bb24371e556ba5fe13c44cd6838
+vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so|17575cf037e5dd3dc4dde528edcda615215dc387
+vendor/lib/vendor.samsung.camera.device@1.0-impl.so|5d0e2abd3e08c282c1bfbf81f7fdfdb9415cb855
+vendor/lib/vendor.samsung.camera.device@3.2-impl.so|658be6a08147112f1c2302bf29803e45406f806d
+vendor/lib/vendor.samsung.camera.device@3.3-impl.so|91a0302bf488b0440a7c239f466cdc5b39a02d74
+vendor/lib/vendor.samsung.camera.device@3.4-impl.so|7b3ce706213324a4fe22b71c93ae624f84b3b39a
+vendor/lib/vendor.samsung.hardware.camera.device@1.0.so|cb93a6febc28266df8937f561cc50e082009d535
+vendor/lib/vendor.samsung.hardware.camera.device@3.2.so|d159f68d07b68ccdc0473afe04eb6e5204e1fbb5
+vendor/lib/vendor.samsung.hardware.camera.device@3.3.so|36e848bd080e97cbdab0ccfd363fbbe1406a33a0
+vendor/lib/vendor.samsung.hardware.camera.device@3.4.so|1caa9aae14a24e2b610069fb65c14dc8c2c30891
+vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so|9bbb78f7c4f1040b7d3c8f8009208912a63b9191
+
 # Camera Configs
 vendor/etc/camera/D05QL_s5k5e3yx_module_info.xml
 vendor/etc/camera/imx219_chromatix.xml

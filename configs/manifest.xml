@@ -27,6 +27,16 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <version>2.4</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>legacy/0</instance>
+        </interface>
+        <fqname>@2.4::ICameraProvider/legacy/0</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.cas</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -635,6 +645,16 @@
             <name>IQtiVoicePrintService</name>
             <instance>default</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <version>2.4</version>
+        <interface>
+            <name>ISecCameraProvider</name>
+            <instance>legacy/0</instance>
+        </interface>
+        <fqname>@2.4::ISecCameraProvider/legacy/0</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.gnss</name>
