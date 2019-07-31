@@ -417,21 +417,6 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 vendor/lib64/vendor.samsung.hardware.gnss@1.0.so
 
-# IMS
--app/ImsSettings/ImsSettings.apk
--priv-app/ImsLogger/ImsLogger.apk
-bin/imsd
-etc/permissions/imsmanager_library.xml
-etc/permissions/secimshttpclient_library.xml
-etc/permissions/vsimservice_library.xml
-framework/secimshttpclient.jar
-framework/imsmanager.jar
-framework/vsimmanager.jar
-lib64/libsec-ims.so
-lib64/libaresdns.so
-lib64/libsveservice.so
-lib64/libSamsungAPVoiceEngine.so
-
 # Keystore
 vendor/lib/hw/keystore.msm8953.so
 vendor/lib64/hw/keystore.msm8953.so
