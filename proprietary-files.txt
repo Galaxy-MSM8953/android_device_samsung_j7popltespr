@@ -370,6 +370,7 @@ vendor/bin/lowi-server
 vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
+vendor/bin/hw/vendor.samsung.hardware.gnss@1.0-service
 vendor/etc/cacert_location.pem
 vendor/etc/flp.conf
 vendor/etc/gps.conf
@@ -379,6 +380,7 @@ vendor/etc/sap.conf
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
 vendor/etc/init/vendor.samsung.hardware.gnss@1.0-service.rc
+vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so
 vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 vendor/lib/libDRPlugin.so
@@ -387,6 +389,7 @@ vendor/lib/libdrplugin_client.so
 vendor/lib/libevent_observer.so
 vendor/lib/libflp.so
 vendor/lib/libgdtap.so
+vendor/lib/libgnss.so
 vendor/lib/libgnsspps.so
 vendor/lib/libgps.utils.so
 vendor/lib/libizat_client_api.so
@@ -404,6 +407,7 @@ vendor/lib/libulp2.so
 vendor/lib/libxtadapter.so
 vendor/lib/vendor.qti.gnss@1.0_vendor.so
 vendor/lib/vendor.samsung.hardware.gnss@1.0.so
+vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so
 vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@1.0-impl.so
 vendor/lib64/libDRPlugin.so
@@ -412,6 +416,7 @@ vendor/lib64/libdrplugin_client.so
 vendor/lib64/libevent_observer.so
 vendor/lib64/libflp.so
 vendor/lib64/libgdtap.so
+vendor/lib64/libgnss.so
 vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
 vendor/lib64/libizat_client_api.so
