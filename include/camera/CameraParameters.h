@@ -139,6 +139,9 @@ public:
     // frameworks/av/include/camera/Camera.h. The default is
     // PIXEL_FORMAT_YUV420SP. Example value: "yuv420sp" or PIXEL_FORMAT_XXX
     // constants. Read/write.
+
+    static const char PIXEL_FORMAT_YUV420SP_NV21[];
+
     static const char KEY_PREVIEW_FORMAT[];
     // Supported image formats for preview frames.
     // Example value: "yuv420sp,yuv422i-yuyv". Read only.
@@ -228,6 +231,9 @@ public:
     // Current color effect setting.
     // Example value: "none" or EFFECT_XXX constants. Read/write.
     static const char KEY_EFFECT[];
+
+    static const char KEY_SUPPORTED_EFFECT_PREVIEW_FPS_RANGE[];
+
     // Supported color effect settings.
     // Example value: "none,mono,sepia". Read only.
     static const char KEY_SUPPORTED_EFFECTS[];
@@ -797,6 +803,7 @@ public:
     static const char KEY_OIS_SUPPORTED[];
     static const char KEY_SUPPORTED_OIS_MODES[];
     static const char KEY_VIDEO_HFR_VALUES[];
+    static const char OIS_CENTERING[];
     static const char OIS_ON_STILL[];
     static const char OIS_ON_VIDEO[];
     static const char OIS_ON_ZOOM[];
