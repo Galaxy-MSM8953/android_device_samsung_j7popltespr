@@ -129,7 +129,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.device@3.4-impl \
     camera.device@1.0-impl \
-    libjpega
+    libjpega \
+    libshims_camera
 
 # Display/Graphics
 PRODUCT_PACKAGES += \
