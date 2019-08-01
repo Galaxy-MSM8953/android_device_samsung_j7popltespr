@@ -298,6 +298,7 @@ PRODUCT_PACKAGES += \
     init.rilcarrier.rc \
     init.rilchip.rc \
     init.rilcommon.rc \
+    init.samsung.rc \
     init.target.rc \
     init.wifi.rc \
     ueventd.qcom.rc
