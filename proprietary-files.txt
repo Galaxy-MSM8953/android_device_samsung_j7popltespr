@@ -526,6 +526,10 @@ vendor/lib64/vendor.samsung.hardware.gnss@1.0.so
 vendor/lib/hw/keystore.msm8953.so
 vendor/lib64/hw/keystore.msm8953.so
 
+# Lights
+vendor/lib/hw/lights.msm8953.so
+vendor/lib64/hw/lights.msm8953.so
+
 # Media
 lib/vendor.qti.hardware.vpp@1.1.so
 lib64/vendor.qti.hardware.vpp@1.1.so
