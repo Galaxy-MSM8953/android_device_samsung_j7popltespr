@@ -226,7 +226,6 @@ PRODUCT_PACKAGES += \
 
 # Lineage hardware
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom \
     vendor.lineage.touch@1.0-service.samsung \
     vendor.lineage.trust@1.0-service
 
