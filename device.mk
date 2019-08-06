@@ -293,6 +293,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
+    init.qti.fm.sh \
     init.qti.ims.sh \
     init.recovery.qcom.rc \
     init.rilcarrier.rc \
