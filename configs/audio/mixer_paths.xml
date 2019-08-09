@@ -1019,6 +1019,10 @@
         <ctl name="EAR PA Gain" value="POS_6_DB" />
     </path>
 
+    <path name="headphones">
+        <path name="ear" />
+    </path>
+
     <path name="speaker-and-headphones">
         <path name="spk-ear" />
         <ctl name="RX1 Digital Volume" value="56" />
@@ -1070,6 +1074,10 @@
         <path name="main-mic" />
         <ctl name="DEC1 Volume" value="86" />
         <ctl name="ADC1 Volume" value="5" />
+    </path>
+
+    <path name="handset-mic">
+        <path name="rec-main-mic" />
     </path>
 
     <path name="rec-main-mic-jam">
@@ -1253,6 +1261,10 @@
         <ctl name="EAR PA Gain" value="POS_6_DB" />
     </path>
 
+    <path name="voice-handset">
+        <path name="voice-call-handset" />
+    </path>
+
     <path name="voice-call-handset-extra-vol">
         <path name="rcv" />
         <ctl name="RX1 Digital Volume" value="84" />
@@ -1276,6 +1288,10 @@
         <ctl name="RX3 Digital Volume" value="84" />
     </path>
 
+    <path name="voice-speaker">
+        <path name="voice-call-speaker" />
+    </path>
+
     <path name="voice-call-speaker-extra-vol">
         <path name="spk" />
         <ctl name="RX3 Digital Volume" value="84" />
@@ -1291,6 +1307,10 @@
         <ctl name="RX1 Digital Volume" value="80" />
         <ctl name="RX2 Digital Volume" value="80" />
         <ctl name="EAR PA Gain" value="POS_1P5_DB" />
+    </path>
+
+    <path name="voice-headphones">
+        <path name="voice-call-headset" />
     </path>
 
     <!-- TX part -->
