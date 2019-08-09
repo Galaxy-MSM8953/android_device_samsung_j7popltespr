@@ -91,6 +91,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so
 
+# Post-processing
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.enable_default_color_mode=1
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.cne.feature=0 \
