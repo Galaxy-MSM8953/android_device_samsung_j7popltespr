@@ -306,6 +306,9 @@ etc/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw
 etc/firmware/cpp_firmware_v1_10_0.fw
 
+# Charger
+vendor/bin/hvdcp_opti
+
 # DRM
 vendor/bin/qseecomd
 vendor/lib/libQSEEComAPI.so
