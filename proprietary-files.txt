@@ -67,9 +67,21 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 
-# Audio SoundFX
-lib/soundfx/libaudioeffectoffload.so
-lib64/soundfx/libaudioeffectoffload.so
+# Audio (Samsung)
+lib/lib_SA_GoogleFX_ver124b.so:vendor/lib/lib_SA_GoogleFX_ver124b.so
+lib/lib_SoundAlive_3DPosition_ver202.so:vendor/lib/lib_SoundAlive_3DPosition_ver202.so
+lib/lib_SoundAlive_play_plus_ver127a.so:vendor/lib/lib_SoundAlive_play_plus_ver127a.so
+lib/lib_SoundBooster_ver710.so:vendor/lib/lib_SoundBooster_ver710.so
+lib/libhiddensound.so:vendor/lib/libhiddensound.so
+lib/libsecaudioinfo.so:vendor/lib/libsecaudioinfo.so
+lib/soundfx/libaudioeffectoffload.so:vendor/lib/soundfx/lib/soundfx/libaudioeffectoffload.so
+lib/soundfx/libaudiosa.so:vendor/lib/soundfx/libaudiosa.so
+lib/soundfx/libaudiosaplus_sec.so:vendor/lib/soundfx/libaudiosaplus_sec.so
+lib/soundfx/libmysound.so:vendor/lib/soundfx/libmysound.so
+lib/soundfx/libmyspace.so:vendor/lib/soundfx/libmyspace.so
+lib/soundfx/libplaybackrecorder.so:vendor/lib/soundfx/libplaybackrecorder.so
+lib/soundfx/libsamsungSoundbooster_plus.so:vendor/lib/soundfx/libsamsungSoundbooster_plus.so
+lib/soundfx/libswdap.so:vendor/lib/soundfx/libswdap.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
