@@ -17,6 +17,11 @@ DEVICE_PATH := device/samsung/j7popltespr
 
 BOARD_VENDOR := samsung
 
+# API Override
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /vendor/bin/mm-qcamera-daemon=27 \
+    /system/vendor/bin/mm-qcamera-daemon=27
+
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := j7popltespr,SM-J727P,J727P
 
