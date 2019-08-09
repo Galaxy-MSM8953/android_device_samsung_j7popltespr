@@ -56,7 +56,6 @@ TARGET_SCREEN_WIDTH := 720
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.msm8953 \
     audio.primary.default \
     audio.r_submix.default \
     audio.a2dp.default \
