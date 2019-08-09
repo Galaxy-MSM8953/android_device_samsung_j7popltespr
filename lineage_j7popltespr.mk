@@ -31,7 +31,7 @@ TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
 # Vendor security patch level
-VENDOR_SECURITY_PATCH := 2019-02-01
+VENDOR_SECURITY_PATCH := 2019-06-01
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_MANUFACTURER := samsung
