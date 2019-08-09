@@ -114,7 +114,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.multisim.simslotcount=1 \
     ro.radio.noril=no \
     ro.telephony.default_cdma_sub=1 \
-    ro.telephony.default_network=9 \
+    ro.telephony.default_network=10 \
     ro.use_data_netmgrd=true \
     telephony.lteOnCdmaDevice=1
 
