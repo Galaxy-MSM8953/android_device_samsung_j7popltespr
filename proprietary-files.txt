@@ -482,6 +482,7 @@ vendor/lib/libdataitems.so
 vendor/lib/libdrplugin_client.so
 vendor/lib/libevent_observer.so
 vendor/lib/libflp.so
+vendor/lib/libgeofence.so
 vendor/lib/libgdtap.so
 vendor/lib/libgnss.so
 vendor/lib/libgnsspps.so
@@ -509,6 +510,7 @@ vendor/lib64/libdataitems.so
 vendor/lib64/libdrplugin_client.so
 vendor/lib64/libevent_observer.so
 vendor/lib64/libflp.so
+vendor/lib64/libgeofence.so
 vendor/lib64/libgdtap.so
 vendor/lib64/libgnss.so
 vendor/lib64/libgnsspps.so
