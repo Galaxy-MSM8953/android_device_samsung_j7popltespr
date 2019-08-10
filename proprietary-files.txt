@@ -303,6 +303,16 @@ vendor/lib/libchromatix_s5k5e3yx_vt_lc898122.so
 vendor/lib/libchromatix_s5k5e3yx_vt.so
 vendor/lib/libchromatix_s5k5e3yx_zsl_preview_lc898122.so
 
+# Camera Provider
+vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so
+vendor/lib/vendor.samsung.camera.device@1.0-impl.so
+vendor/lib/vendor.samsung.camera.device@3.2-impl.so
+vendor/lib/vendor.samsung.camera.device@3.3-impl.so
+vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
+vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
+vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
+vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
+
 # Camera Actuator
 vendor/lib/libactuator_dw9807.so
 
