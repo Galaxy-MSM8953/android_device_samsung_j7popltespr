@@ -209,20 +209,13 @@ vendor/lib/libts_detected_face_hal.so
 vendor/lib/libts_face_beautify_hal.so
 
 # Camera (j7popltespr specific)
+vendor/lib/libactuator_dw9807.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libmmcamera_dw9807_eeprom.so
 vendor/lib/libmmcamera_imx219.so
 vendor/lib/libmmcamera_s5k5e3yx.so
 
-# Camera Configs
-vendor/etc/camera/D05QL_s5k5e3yx_module_info.xml
-vendor/etc/camera/imx219_chromatix.xml
-vendor/etc/camera/msm8953_camera_j7pop.xml
-vendor/etc/camera/R08QS_imx219_module_info.xml
-vendor/etc/camera/s5k4h5yc_dw9807_chromatix.xml
-vendor/etc/camera/s5k5e3yx_f2_2_chromatix.xml
-
-# Camera chromatix
+# Camera Chromatix
 vendor/lib/libchromatix_imx219_3a_4k_preview.so
 vendor/lib/libchromatix_imx219_3a_4k_video.so
 vendor/lib/libchromatix_imx219_3a_hfr_120.so
@@ -303,20 +296,15 @@ vendor/lib/libchromatix_s5k5e3yx_vt_lc898122.so
 vendor/lib/libchromatix_s5k5e3yx_vt.so
 vendor/lib/libchromatix_s5k5e3yx_zsl_preview_lc898122.so
 
-# Camera Provider
-vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so
-vendor/lib/vendor.samsung.camera.device@1.0-impl.so
-vendor/lib/vendor.samsung.camera.device@3.2-impl.so
-vendor/lib/vendor.samsung.camera.device@3.3-impl.so
-vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
-vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
-vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
-vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
+# Camera Configs
+vendor/etc/camera/D05QL_s5k5e3yx_module_info.xml
+vendor/etc/camera/imx219_chromatix.xml
+vendor/etc/camera/msm8953_camera_j7pop.xml
+vendor/etc/camera/R08QS_imx219_module_info.xml
+vendor/etc/camera/s5k4h5yc_dw9807_chromatix.xml
+vendor/etc/camera/s5k5e3yx_f2_2_chromatix.xml
 
-# Camera Actuator
-vendor/lib/libactuator_dw9807.so
-
-# Camera firmware
+# Camera Firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
@@ -330,6 +318,16 @@ etc/firmware/cpp_firmware_v1_10_0.fw
 # Camera LLVD (kuntao)
 vendor/lib/libllvd_smore.so|4a3e0cd657a37f1c1b7e0746c3dd3cd4541351dc
 vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
+
+# Camera Provider
+vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so
+vendor/lib/vendor.samsung.camera.device@1.0-impl.so
+vendor/lib/vendor.samsung.camera.device@3.2-impl.so
+vendor/lib/vendor.samsung.camera.device@3.3-impl.so
+vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
+vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
+vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
+vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
 
 # Charger
 vendor/bin/hvdcp_opti
