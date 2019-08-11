@@ -598,8 +598,6 @@ vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1_vendor.so
-vendor/media/LMspeed_508.emd
-vendor/media/PFFprec_600.emd
 
 # Mobicore
 vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
@@ -668,11 +666,6 @@ vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.postproc@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
-
-# Power-off alarm
-vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar
-vendor/lib/vendor.qti.hardware.alarm@1.0.so
-vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # QMI
 vendor/bin/irsc_util
@@ -790,9 +783,6 @@ vendor/lib64/vendor.samsung.hardware.vibrator@1.0_vendor.so
 
 # WideVine
 vendor/lib/mediadrm/libwvdrmengine.so
-
-# WiFi
-bin/cnss-daemon:vendor/bin/cnss-daemon
 
 # WiFi Firmware
 etc/firmware/nvm_tlv.bin
