@@ -74,6 +74,10 @@ function blob_fixup() {
                 sed -i -e 's/android.hardware.camera.device@3.2.so/android.hardware.camera.devi27@3.2.so/g' "${2}"
                 sed -i -e 's/android.hardware.graphics.common@1.0.so/android.hardware.graphics.comm27@1.0.so/g' "${2}"
         ;;
+        vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service)
+                patchelf --remove-needed android.hardware.camera.device@3.4.so "${2}"
+                patchelf --remove-needed vendor.samsung.hardware.camera.device@3.4.so "${2}"
+        ;;
         esac
 }
 

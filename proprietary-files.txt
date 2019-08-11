@@ -329,6 +329,9 @@ vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
 vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
 vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
 
+# Camera Provider (A6+)
+vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service|666eb413cc9fd655529ba99253b2501c8b4f8dfe|5fd1bf08b480d9441209bb076ac17818abf21cdc
+
 # Charger
 vendor/bin/hvdcp_opti
 
