@@ -70,6 +70,10 @@ function blob_fixup() {
         vendor/lib/hw/audio.primary.msm8953.so)
                 sed -i -e 's|libtinycompress_vendor.so|libtinycompress.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
         ;;
+        vendor/lib/vendor.samsung.hardware.camera.device@3.2.so)
+                sed -i -e 's/android.hardware.camera.device@3.2.so/android.hardware.camera.devi27@3.2.so/g' "${2}"
+                sed -i -e 's/android.hardware.graphics.common@1.0.so/android.hardware.graphics.comm27@1.0.so/g' "${2}"
+        ;;
         esac
 }
 
