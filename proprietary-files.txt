@@ -478,6 +478,13 @@ etc/permissions/izat.xt.srv.xml
 etc/permissions/privapp-permissions-com.qualcomm.location.xml
 framework/com.qti.location.sdk.jar
 framework/izat.xt.srv.jar
+lib/liblocationservice_jni.so
+lib/libxt_native.so
+lib/vendor.qti.gnss@1.0.so
+lib64/liblocationservice_jni.so
+lib64/libxt_native.so
+lib64/vendor.qti.gnss@1.0.so
+-priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
