@@ -61,9 +61,6 @@ fi
 
 function blob_fixup() {
         case "${1}" in
-        vendor/lib/vendor.samsung.hardware.radio@1.1_vendor.so | vendor/lib64/vendor.samsung.hardware.radio@1.1_vendor.so)
-                sed -i -e 's|android.hardware.radio@1.0.so|android.hardware.rav27@1.0.so|g' "${2}"
-        ;;
         vendor/lib/hw/audio.primary.msm8953.so)
                 sed -i -e 's|libtinycompress_vendor.so|libtinycompress.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
         ;;
@@ -81,7 +78,6 @@ function blob_fixup() {
         ;;
         esac
 }
-
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
