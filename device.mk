@@ -340,8 +340,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v27/arm64/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.gnss@1.0.so:system/lib/android.hardware.gn27@1.0.so \
     prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/android.hardware.gnss@1.0.so:system/lib64/android.hardware.gn27@1.0.so \
-    prebuilts/vndk/v27/arm64/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.radio@1.0.so:system/lib/android.hardware.rav27@1.0.so \
-    prebuilts/vndk/v27/arm64/arch-arm64-armv8-a/shared/vndk-core/android.hardware.radio@1.0.so:system/lib64/android.hardware.rav27@1.0.so \
     prebuilts/vndk/v27/arm64/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.camera.device@3.2.so:system/lib/android.hardware.camera.devi27@3.2.so \
     prebuilts/vndk/v27/arm64/arch-arm-armv7-a-neon/shared/vndk-sp/android.hardware.graphics.common@1.0.so:system/lib/android.hardware.grahpics.comm27@1.0.so
 
