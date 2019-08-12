@@ -326,8 +326,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.1 \
-    android.hardware.radio.deprecated@1.0 \
+    libril \
     librmnetctl \
     libsecril-client \
     libxml2 \
