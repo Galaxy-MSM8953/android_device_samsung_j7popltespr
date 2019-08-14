@@ -75,6 +75,9 @@ function blob_fixup() {
                 patchelf --remove-needed android.hardware.camera.device@3.4.so "${2}"
                 patchelf --remove-needed vendor.samsung.hardware.camera.device@3.4.so "${2}"
         ;;
+        vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so | vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so)
+                sed -i -e 's|vendor.qti.hardware.fm@1.0_vendor.so|vendor.qti.hardware.fm@1.0.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
+        ;;
         esac
 }
 
