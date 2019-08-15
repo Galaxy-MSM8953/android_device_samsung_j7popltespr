@@ -78,6 +78,9 @@ function blob_fixup() {
         vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so | vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so)
                 sed -i -e 's|vendor.qti.hardware.fm@1.0_vendor.so|vendor.qti.hardware.fm@1.0.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
         ;;
+        vendor/lib64/libsecureui_svcsock.so)
+                sed -i -e 's|vendor.qti.hardware.tui_comm@1.0_vendor.so|vendor.qti.hardware.tui_comm@1.0.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
+        ;;
         esac
 }
 
