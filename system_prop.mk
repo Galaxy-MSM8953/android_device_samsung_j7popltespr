@@ -89,6 +89,23 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.loc.nlp_name=com.qualcomm.location \
     ro.gps.agps_provider=1
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    av.debug.disable.pers.cache=1 \
+    media.aac_51_output_enabled=true \
+    media.msm8956hw=0 \
+    media.stagefright.audio.sink=280 \
+    vendor.mm.enable.qcom_parser=1048575 \
+    mm.enable.smoothstreaming=true \
+    mmp.enable.3g2=true \
+    vendor.audio.hw.aac.encoder=true \
+    vendor.vidc.dec.downscalar_height=1088 \
+    vendor.vidc.dec.downscalar_width=1920 \
+    vendor.vidc.disable.split.mode=1 \
+    vendor.vidc.enc.disable.pq=true \
+    vendor.vidc.enc.disable_bframes=1 \
+    vendor.video.disable.ubwc=1
+
 # OEM Unlock reporting
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
