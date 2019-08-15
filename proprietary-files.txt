@@ -354,8 +354,6 @@ vendor/lib64/libssd.so
 
 # Extra Firmware
 etc/firmware/ice40.bin
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
 
 # FM
 etc/init/init.qti.fm.rc:vendor/etc/init/init.qti.fm.rc
@@ -632,7 +630,6 @@ vendor/lib64/libsmemlog.so
 vendor/lib64/libxml.so
 
 # Radio
-bin/srm.bin
 lib/libatparser.so
 lib/libfactoryutil.so
 lib/libfloatingfeature.so
