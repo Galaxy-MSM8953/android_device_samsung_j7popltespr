@@ -320,19 +320,6 @@ etc/firmware/cpp_firmware_v1_10_0.fw
 vendor/lib/libllvd_smore.so|4a3e0cd657a37f1c1b7e0746c3dd3cd4541351dc
 vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
 
-# Camera Provider
-vendor/lib/hw/vendor.samsung.hardware.camera.provider@2.4-impl.so
-vendor/lib/vendor.samsung.camera.device@1.0-impl.so
-vendor/lib/vendor.samsung.camera.device@3.2-impl.so
-vendor/lib/vendor.samsung.camera.device@3.3-impl.so
-vendor/lib/vendor.samsung.hardware.camera.device@1.0.so
-vendor/lib/vendor.samsung.hardware.camera.device@3.2.so
-vendor/lib/vendor.samsung.hardware.camera.device@3.3.so
-vendor/lib/vendor.samsung.hardware.camera.provider@2.4.so
-
-# Camera Provider (A6+)
-vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service|666eb413cc9fd655529ba99253b2501c8b4f8dfe|5fd1bf08b480d9441209bb076ac17818abf21cdc
-
 # Charger
 vendor/bin/hvdcp_opti
 

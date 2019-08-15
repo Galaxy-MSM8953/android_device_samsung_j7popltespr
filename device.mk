@@ -118,9 +118,8 @@ PRODUCT_PACKAGES += \
      Snap
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4 \
-    camera.device@1.0-impl \
-    camera.device@3.3-impl \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
     libjpega \
     libshims_camera
 
