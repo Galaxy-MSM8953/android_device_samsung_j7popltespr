@@ -33,11 +33,9 @@ vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 
 # ANT+
-lib/com.qualcomm.qti.ant@1.0.so
-lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so
+vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so:vendor/lib/com.qualcomm.qti.ant@1.0.so
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
+vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so:vendor/lib64/com.qualcomm.qti.ant@1.0.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio configs
@@ -101,8 +99,8 @@ vendor/lib64/libbt-hidlclient.so|0b0b69ef9787e3cd5409f0050cad03698dd6ce26
 vendor/lib64/libbtnv.so|35444e0ca93a50751db92aa4871cf277dc66b1fa
 
 # Bluetooth (aptX - from oneplus3)
-lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
-lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
+lib64/libaptX_encoder.so:vendor/lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
+lib64/libaptXHD_encoder.so:vendor/lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 
 # Camera
 vendor/bin/mm-qcamera-daemon
@@ -306,19 +304,15 @@ vendor/etc/camera/s5k4h5yc_dw9807_chromatix.xml
 vendor/etc/camera/s5k5e3yx_f2_2_chromatix.xml
 
 # Camera Firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
-etc/firmware/cpp_firmware_v1_5_0.fw
-etc/firmware/cpp_firmware_v1_5_2.fw
-etc/firmware/cpp_firmware_v1_6_0.fw
-etc/firmware/cpp_firmware_v1_8_0.fw
-etc/firmware/cpp_firmware_v1_10_0.fw
-
-# Camera LLVD (kuntao)
-vendor/lib/libllvd_smore.so|4a3e0cd657a37f1c1b7e0746c3dd3cd4541351dc
-vendor/lib/libseemore.so|8fc2ae17c7364f789bda71b20a2fba006f9568c8
+etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_5_0.fw:vendor/firmware/cpp_firmware_v1_5_0.fw
+etc/firmware/cpp_firmware_v1_5_2.fw:vendor/firmware/cpp_firmware_v1_5_2.fw
+etc/firmware/cpp_firmware_v1_6_0.fw:vendor/firmware/cpp_firmware_v1_6_0.fw
+etc/firmware/cpp_firmware_v1_8_0.fw:vendor/firmware/cpp_firmware_v1_8_0.fw
+etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw
 
 # Charger
 vendor/bin/hvdcp_opti
@@ -340,7 +334,7 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
 # Extra Firmware
-etc/firmware/ice40.bin
+etc/firmware/ice40.bin:vendor/firmware/ice40.bin
 
 # FM
 etc/init/init.qti.fm.rc:vendor/etc/init/init.qti.fm.rc
@@ -529,8 +523,6 @@ vendor/lib/libwms.so
 vendor/lib64/libwms.so
 
 # Perf - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-lib/vendor.qti.hardware.perf@1.0.so|06af4cabd86e643181ecefae95b62338dd319b28
-lib64/vendor.qti.hardware.perf@1.0.so|30798b76c4ef1755b74d17974dc90f39898c9eea
 vendor/bin/energy-awareness|d9b3f1cc791e0e9612a5ff5df6836af4c921a52b
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|de67bdaaf38ba6e0bfd56847cff1c00a9ff1ef79
 vendor/bin/msm_irqbalance|bf933b58332cf94fe4a2072bc3e976a6a82efe3c
@@ -559,12 +551,6 @@ vendor/lib64/libperipheral_client.so|e2fbf94c589dbf8ae6c544a34441783ae9db3a08
 # Postprocessing - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
 framework/com.qti.snapdragon.sdk.display.jar|db5b8dd09100aab238b5972192f5ab944f38208c
--lib/vendor.display.color@1.0.so|d5f3693e462c1832ea5407ce2eded800641f6d80
-lib/vendor.display.postproc@1.0.so|13e1e398997cbb7da4bb24392e4b13578c4644fc
-lib/vendor.qti.hardware.qdutils_disp@1.0.so|5a99b7a09a4ccda16d0fa4aaa6f04be2bb676f7d
--lib64/vendor.display.color@1.0.so|6093f6b3f654ea557ea297e695bc92a8fbae0c13
-lib64/vendor.display.postproc@1.0.so|44a60e215fc075f09973f033bacc89af2afe4164
-lib64/vendor.qti.hardware.qdutils_disp@1.0.so|e0fd5a17e9ce0fddda384b9810acd736e5905458
 vendor/bin/hw/vendor.display.color@1.0-service|2dbbb46a62ac5cf8d3a084c8350457442f5741eb
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|2536d249be2b723821eae12a505c737e2c6f7681
 vendor/bin/mm-pp-dpps|c281ee28274eeff6273091ae07aa1856a0c160db
@@ -617,14 +603,14 @@ vendor/lib64/libsmemlog.so
 vendor/lib64/libxml.so
 
 # Radio
-lib/libatparser.so
-lib/libfactoryutil.so
-lib/libfloatingfeature.so
-lib/libomission_avoidance.so
-lib64/libatparser.so
-lib64/libfactoryutil.so
-lib64/libfloatingfeature.so
-lib64/libomission_avoidance.so
+lib/libatparser.so:vendor/lib/libatparser.so
+lib/libfactoryutil.so:vendor/lib/libfactoryutil.so
+lib/libfloatingfeature.so:vendor/lib/libfloatingfeature.so
+lib/libomission_avoidance.so:vendor/lib/libomission_avoidance.so
+lib64/libatparser.so:vendor/lib64/libatparser.so
+lib64/libfactoryutil.so:vendor/lib64/libfactoryutil.so
+lib64/libfloatingfeature.so:vendor/lib64/libfloatingfeature.so
+lib64/libomission_avoidance.so:vendor/lib64/libomission_avoidance.so
 vendor/bin/netmgrd
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
@@ -678,16 +664,14 @@ vendor/bin/time_daemon|bc58af8ed0cc94708aa75372565f4251991ab123
 -vendor/lib64/libtime_genoff.so|8f4c1f9ace6af463b241b130d6872b5d39cc7b2a
 
 # TUI - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
-lib/vendor.qti.hardware.tui_comm@1.0.so|03a2143899def287dd48b2290f769b4eebdd61d0
-lib64/vendor.qti.hardware.tui_comm@1.0.so|886be11a566c18744db517c94e2530b68df819b6
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|86c327a8310fcc42f69c85ec0868c630903c7d79
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|03a2143899def287dd48b2290f769b4eebdd61d0
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|886be11a566c18744db517c94e2530b68df819b6
 
 # Vibrator
-lib/vendor.samsung.hardware.vibrator@1.0.so
-lib64/vendor.samsung.hardware.vibrator@1.0.so
+lib/vendor.samsung.hardware.vibrator@1.0.so:vendor/lib/vendor.samsung.hardware.vibrator@1.0.so
+lib64/vendor.samsung.hardware.vibrator@1.0.so:vendor/lib64/vendor.samsung.hardware.vibrator@1.0.so
 vendor/bin/hw/vendor.samsung.hardware.vibrator@1.0-service
 vendor/etc/init/vendor.samsung.hardware.vibrator@1.0-service.rc
 vendor/lib64/vendor.samsung.hardware.vibrator@1.0_vendor.so
@@ -696,15 +680,3 @@ vendor/lib64/vendor.samsung.hardware.vibrator@1.0_vendor.so
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|458b57eadd116b32d1d288447d3537d00761f506
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|458dd241f5f8536eccb57f012b3eba0061736e8e
 vendor/lib/libwvhidl.so|45bc058184befe19b26cbb7bbcedf497c693024e
-
-# WiFi Firmware
-etc/firmware/nvm_tlv.bin
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/nvm_tlv_3.2.bin
-etc/firmware/rampatch_tlv.img
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/rampatch_tlv_3.2.tlv

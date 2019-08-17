@@ -62,7 +62,7 @@ fi
 function blob_fixup() {
         case "${1}" in
         vendor/lib/vendor.samsung.hardware.radio@1.1_vendor.so | vendor/lib64/vendor.samsung.hardware.radio@1.1_vendor.so)
-                sed -i -e 's/android.hardware.radio@1.0.so/android.hardware.rav27@1.0.so/g' "${2}"
+                sed -i -e 's|android.hardware.radio@1.0.so|android.hardware.rav27@1.0.so|g' "${2}"
         ;;
         vendor/lib/hw/audio.primary.msm8953.so)
                 sed -i -e 's|libtinycompress_vendor.so|libtinycompress.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
@@ -72,6 +72,12 @@ function blob_fixup() {
         ;;
         vendor/lib64/libsecureui_svcsock.so)
                 sed -i -e 's|vendor.qti.hardware.tui_comm@1.0_vendor.so|vendor.qti.hardware.tui_comm@1.0.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
+        ;;
+        vendor/bin/hw/vendor.samsung.hardware.vibrator@1.0-service)
+                sed -i -e 's|vendor.samsung.hardware.vibrator@1.0_vendor.so|vendor.samsung.hardware.vibrator@1.0.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
+        ;;
+        vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so | vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so)
+                sed -i -e 's|com.qualcomm.qti.ant@1.0_vendor.so|com.qualcomm.qti.ant@1.0.so\x0\x0\x0\x0\x0\x0\x0|g' "${2}"
         ;;
         esac
 }
