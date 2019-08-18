@@ -611,6 +611,7 @@ lib64/libatparser.so:vendor/lib64/libatparser.so
 lib64/libfactoryutil.so:vendor/lib64/libfactoryutil.so
 lib64/libfloatingfeature.so:vendor/lib64/libfloatingfeature.so
 lib64/libomission_avoidance.so:vendor/lib64/libomission_avoidance.so
+vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
 vendor/bin/rmt_storage
 vendor/bin/tftp_server
