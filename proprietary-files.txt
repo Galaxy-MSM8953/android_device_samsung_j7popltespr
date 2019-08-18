@@ -65,30 +65,26 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 
-# Audio (Samsung)
-lib/libSamsungPostProcess.so:vendor/lib/libSamsungPostProcess.so
-lib/libSamsungPostProcessConvertor.so:vendor/lib/libSamsungPostProcessConvertor.so
-lib/lib_SA_GoogleFX_ver124b.so:vendor/lib/lib_SA_GoogleFX_ver124b.so
-lib/lib_SamsungRec_06002.so:vendor/lib/lib_SamsungRec_06002.so
-lib/lib_SoundAlive_3DPosition_ver202.so:vendor/lib/lib_SoundAlive_3DPosition_ver202.so
-lib/lib_SoundAlive_SRC384_ver300.so:vendor/lib/lib_SoundAlive_SRC384_ver300.so
-lib/lib_SoundAlive_play_plus_ver127a.so:vendor/lib/lib_SoundAlive_play_plus_ver127a.so
-lib/lib_SoundBooster_ver710.so:vendor/lib/lib_SoundBooster_ver710.so
-lib/lib_soundaliveresampler.so:vendor/lib/lib_soundaliveresampler.so
-lib/libhiddensound.so:vendor/lib/libhiddensound.so
-lib/librecordalive.so:vendor/lib/librecordalive.so
-lib/libsamsungVoipResampler.so:vendor/lib/libsamsungVoipResampler.so
-lib/libsecaudioinfo.so:vendor/lib/libsecaudioinfo.so
-lib/soundfx/libaudioeffectoffload.so:vendor/lib/soundfx/libaudioeffectoffload.so
-lib/soundfx/libaudiosa.so:vendor/lib/soundfx/libaudiosa.so
-lib/soundfx/libaudiosaplus_sec.so:vendor/lib/soundfx/libaudiosaplus_sec.so
-lib/soundfx/libmysound.so:vendor/lib/soundfx/libmysound.so
-lib/soundfx/libmyspace.so:vendor/lib/soundfx/libmyspace.so
-lib/soundfx/libplaybackrecorder.so:vendor/lib/soundfx/libplaybackrecorder.so
-lib/soundfx/libsamsungSoundbooster_plus.so:vendor/lib/soundfx/libsamsungSoundbooster_plus.so
-lib/soundfx/libswdap.so:vendor/lib/soundfx/libswdap.so
-vendor/lib/hw/audio.primary.msm8953.so
-vendor/lib/libaudio_soundtrigger.so
+# Audio (Samsung) - from A6+
+lib/lib_SoundAlive_play_plus_ver210.so:vendor/lib/lib_SoundAlive_play_plus_ver210.so|7f3af73ee2698a4d852799f0e46cf9d21b187900
+lib/lib_SoundBooster_ver900.so:vendor/lib/lib_SoundBooster_ver900.so|c452a7356d0a79130e2475c210a73f5dc3e4d88d
+lib/libprofileparamstorage.so:vendor/lib/libprofileparamstorage.so|e729ef53c999769479c42046e33dc568b5201082
+vendor/lib/hw/audio.primary.msm8953.so|134b2cda784c39e34ab96f9ca0eb37fc7a22be0a|8cf5f9ffcad1b6b757b0ec6de3294700c0f3afd0
+vendor/lib/libSamsungPostProcessConvertor.so|b1bb8dd2f7ac115e7e14c68feffaf1b2d704e0e1
+vendor/lib/lib_SamsungRec_06005.so|eb51b5f563a4cc05e60cebeb0f6d6f27e5a94b37
+vendor/lib/lib_SoundAlive_3DPosition_ver202.so|41503a56def74dc090af93d6267137298bea98b5
+vendor/lib/lib_SoundAlive_SRC384_ver320.so|b3343ab9add6eb426a19b712dbeba00224eca7d8
+vendor/lib/lib_soundaliveresampler.so|c23cb4b75c91d26207a7b816fc33ebf4b88df659
+vendor/lib/libaudio_soundtrigger.so|0a526c5842b456113b72d6a879610ac8d22197d4
+vendor/lib/librecordalive.so|9373de4c59a236eb7f6b060c7384a9e7fe2bdf88
+vendor/lib/libsamsungVoipResampler.so|98f352dd59bc87ed0755120923f60af65056cb91
+vendor/lib/libsecaudioinfo.so|0f2e85cc4a31db3d578f04dc34bf0c5e5a694f18
+vendor/lib/soundfx/libaudiosaplus_sec.so|5b35b270feacee6f14ca53b0a3315965ce6f1422
+vendor/lib/soundfx/libmysound.so|52a87fa21f37c4bd71a14ffc1a37949a73538f49
+vendor/lib/soundfx/libmyspace.so|79001d2c60c0defd436bdf5c3c46881d21a3ea39
+vendor/lib/soundfx/libplaybackrecorder.so|ba831a694604ffbc4b307beb204bacbb26921a6d
+vendor/lib/soundfx/libsamsungSoundbooster_plus.so|e7adf75b9d245b45af974bdc519987d64001afb8
+vendor/lib/soundfx/libswdap.so|848544cec3d78b4d68795081052a7f04e2b0f557
 
 # Bluetooth - from tissot - PKQ1.180917.001.V10.0.4.0.PDHMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9178856dc8651b499d1b155825b6115a486ee05e
