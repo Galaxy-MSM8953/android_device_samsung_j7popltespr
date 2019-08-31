@@ -326,16 +326,16 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libril \
+    android.hardware.radio@1.2 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
     librmnetctl \
-    libsecril-client \
+    libcnefeatureconfig \
     libxml2 \
-    libprotobuf-cpp-full \
-    rild
+    telephony-ext
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
-    $(LOCAL_PATH)/configs/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v27/arm64/arch-arm-armv7-a-neon/shared/vndk-core/android.hardware.gnss@1.0.so:system/lib/android.hardware.gn27@1.0.so \
@@ -352,13 +352,6 @@ PRODUCT_PACKAGES += \
 
 # System Properties
 -include $(LOCAL_PATH)/system_prop.mk
-
-# Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
