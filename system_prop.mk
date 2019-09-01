@@ -61,6 +61,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd \
     vendor.qcom.bluetooth.soc=smd
 
+# Cne/Dpm
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.cne.feature=1 \
+    persist.dpm.feature=1
+
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
@@ -120,7 +125,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.cne.feature=0 \
     persist.data.dpm.enable=true \
     persist.data.dropssdp=false \
     persist.data.ibfc.enable=true \
