@@ -137,7 +137,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
-    rild.libpath=/vendor/lib64/libsec-ril.so \
+    rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.multisim.simslotcount=1 \
     ro.radio.noril=no \
     ro.telephony.default_cdma_sub=1 \
@@ -149,7 +149,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.debug_level=0x4f4d \
     ro.product_ship=true
-
-# Samsung-Specific (RIL)
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
